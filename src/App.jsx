@@ -1,14 +1,64 @@
 import { useState } from 'react'
+import Education from './components/Education';
+import Introduction from './components/Introduction';
+import Experience from './components/Experience';
 import './App.css'
 
 function App() {
-  //const [count, setCount] = useState(0)
+  const [introduction, setIntroduction] = useState({
+    name : "",
+    email: "",
+    phone: "",
+    intro: ""
+  });
 
-  return (
-    <>
-     
-    </>
-  )
+  const [education, setEducation] = useState ({
+    institute: "",
+    degreeType: "",
+    fieldOfStudy: "",
+    educationStart: "",
+    educationEnd: ""
+  });
+
+  const [experience, setExperience] = useState({
+    companyName :"",
+    position: "",
+    yearsOfExperience: "",
+    brief: ""
+  })
+
+
+  return(
+    <div className="app">
+      <header className='appHeader'>
+        <h1>CV Application</h1>
+        <p>Build your CV</p>
+      </header>
+
+      <main className='appContent'>
+        <section className='formsContainer'>
+          <Introduction
+          data = {introduction}
+          setData={setIntroduction}
+          />
+          <Education
+          data = {education}
+          setData={setEducation}
+          />
+          <Experience
+          data = {experience}
+          setData={setExperience}
+          />
+        </section>
+
+      </main>
+
+    </div>
+  );
 }
 
 export default App
+
+/*Page simulation on the right, updating live, sections left
+Introduction section must, Education section must, experience up to 3, option to flip order between education and experience
+extras section*/
