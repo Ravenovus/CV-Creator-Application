@@ -53,9 +53,9 @@ function CVPreview({
                     <div className="cvEntryHeader">
                         <strong>{experience.companyName || "Company Name"}</strong>                      
                     </div>
-                    <span>
-                        {experience.position || "Position"}
-                        {experience.yearsOfExperience || "amount of years"} years
+                    <span className="jobLength">
+                        <div>{experience.position || "Position"}</div>
+                        <div>{experience.yearsOfExperience || "amount of years"} years</div>
                     </span>                      
                     <p className="elaboration">
                         Briefly about the role : {experience.brief || "..."}

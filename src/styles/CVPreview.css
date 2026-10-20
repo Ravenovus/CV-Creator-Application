@@ -60,3 +60,8 @@
   white-space: pre-wrap;
   line-height: 1.6;
 }
+
+.jobLength{
+    display:flex;
+    justify-content: space-between;
+}

@@ -2,3 +2,10 @@ textarea {
   resize: vertical;
   font-family: inherit;
 }
+
+.inputPair{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-between;
+}

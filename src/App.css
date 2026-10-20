@@ -1,0 +1,43 @@
+.app{
+  min-height: 100vh;
+}
+
+.appHeader{
+  background: #1f3057;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.appHeader h1{
+  margin:0;
+  font-size: 2.2rem;
+}
+
+.appHeader p{
+  margin:8px 0 0;
+  color : #d1d5db;
+}
+
+.appContent{
+  width: min(1400px, 95%);
+  margin:40px auto;
+  display: grid;
+  gap:15px;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.formsContainer{
+  min-width: 0;
+}
+
+@media (max-width: 900px){
+  .appContent{
+    grid-template-columns: 1fr;
+  }
+
+  .cvPreview{
+    order: -1;
+  }
+}

@@ -22,7 +22,7 @@ function Experience({data,setData}){
         return(
             <section className="formSection">
                 <div className="sectionHeader">
-                    <h2>Experience Section</h2>
+                    <h2>Experience</h2>
                     <button type="button" onClick={handleEdit}>Edit</button>
                 </div>
                 <div className="submittedInfo">
@@ -45,10 +45,10 @@ function Experience({data,setData}){
 
     return(
         <section className="formSection">
-            <h2>Experience Section</h2>
+            <h2>Experience</h2>
             <form onSubmit={handleSubmit}>
                 <div className="formGroup">
-                    <label htmlFor="companyName">Company Name</label>
+                    <label htmlFor="companyName">Company name</label>
                     <input
                         type="text" 
                         name="companyName" 
@@ -72,7 +72,7 @@ function Experience({data,setData}){
                 </div>
 
                 <div className="formGroup">
-                    <label htmlFor="yearsOfExperience">Years of Experience</label>
+                    <label htmlFor="yearsOfExperience">Years of experience</label>
                     <input 
                         type="text"
                         inputmode="numeric"
@@ -95,7 +95,8 @@ function Experience({data,setData}){
                         placeholder="About the role, what i did, what i was responsible for"
                         rows="5" 
                     />
-                </div>                
+                </div> 
+                <button type="submit">Submit</button>               
             </form>
         </section>
     )

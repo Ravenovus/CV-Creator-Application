@@ -10,7 +10,7 @@ function Education({data, setData}){
     }
 
     function handleSubmit(event){
-        event.preventDefalut();
+        event.preventDefault();
         setIsEditing(false);
     }
 
@@ -22,7 +22,7 @@ function Education({data, setData}){
         return(
             <section className="formSection">
                 <div className="sectionHeader">
-                    <h2>Education Section</h2>
+                    <h2>Education</h2>
                     <button type="button" onClick={handleEdit}>Edit</button>
                 </div>
                 <div className="submittedInfo">
@@ -30,7 +30,7 @@ function Education({data, setData}){
                         <strong>Education establishment name:</strong> {data.institute}
                     </p>
                     <p>
-                        <strong>{data.degreeType}</strong> in {data.fieldOfStudy}
+                        <strong>{data.degreeType}</strong>{data.fieldOfStudy =="" ? "": " in " + data.fieldOfStudy}
                     </p>
                     <p>
                         <strong>Years of study:</strong> {data.educationStart} - {data.educationEnd}
@@ -42,7 +42,7 @@ function Education({data, setData}){
 
     return(
         <section className="formSection">
-            <h2>Education section</h2>
+            <h2>Education</h2>
             <form onSubmit={handleSubmit}>
                 <div className="formGroup">
                     <label htmlFor="institute">Education establishment name</label>
@@ -69,7 +69,7 @@ function Education({data, setData}){
                 </div>
 
                 <div className="formGroup">
-                    <label htmlFor="fieldOfStudy">Field of Study</label>
+                    <label htmlFor="fieldOfStudy">Field of study</label>
                     <input 
                         type="text"
                         name="fieldOfStudy"
@@ -111,6 +111,7 @@ function Education({data, setData}){
                          />
                     </div>
                 </div>
+                <button type="submit">Submit</button>
             </form>
         </section>
     );

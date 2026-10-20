@@ -22,7 +22,7 @@ function Introduction({data, setData}){
         return(
             <section className="formSection">
                 <div className="sectionHeader">
-                    <h2>Introduction Section</h2>
+                    <h2>Introduction</h2>
                     <button type="button" onClick={handleEdit}>Edit</button>
                 </div>
                 <div className="submittedInfo">
@@ -35,7 +35,7 @@ function Introduction({data, setData}){
                     <p>
                         <strong>Phone:</strong> {data.email}
                     </p>
-                    <p>
+                    <p className="elaboration">
                         <strong>Short Introduction:</strong> {data.intro}
                     </p>
                 </div>
@@ -45,7 +45,7 @@ function Introduction({data, setData}){
 
     return(
         <section className="formSection">
-            <h2>Introduction Section</h2>
+            <h2>Introduction</h2>
             <form onSubmit={handleSubmit}>
                 <div className="formGroup">
                     <label htmlFor="name">Name</label>
@@ -97,7 +97,8 @@ function Introduction({data, setData}){
                         rows="3" 
                         required
                     />
-                </div>                
+                </div>
+                <button type="submit">Submit</button>                
             </form>
         </section>
     );
