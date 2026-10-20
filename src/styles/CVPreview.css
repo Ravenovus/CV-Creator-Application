@@ -1,0 +1,62 @@
+.cvPreview {
+  background: rgb(255, 255, 255);
+  min-height: 900px;
+  padding: 50px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  color: #1f2937;
+}
+
+.cvHeader{
+    text-align: center;
+    border-bottom: 2px solid #1f2937;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+}
+
+.cvHeader h1{
+    margin: 0 0 12px;
+    font-size: 2.5rem;
+}
+
+.contactInfo{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    color:#21324b;
+}
+
+.cvSection{
+    margin-bottom: 32px;
+}
+
+.cvSection h2{
+    font-size:1.25rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.cvEntry{
+    margin-bottom: 20px;
+}
+
+.cvEntryHeader{
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.cvEntryHeader strong {
+  font-size: 1.05rem;
+}
+
+.cvEntry p {
+  margin: 8px 0;
+}
+
+.elaboration{
+  white-space: pre-wrap;
+  line-height: 1.6;
+}

@@ -63,7 +63,3 @@ function App() {
 }
 
 export default App
-
-/*Page simulation on the right, updating live, sections left
-Introduction section must, Education section must, experience up to 3, option to flip order between education and experience
-extras section*/

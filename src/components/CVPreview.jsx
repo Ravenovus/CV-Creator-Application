@@ -27,7 +27,7 @@ function CVPreview({
                     </span>
                 </div>
             </div>
-            <span>
+            <span className="elaboration">
                 {/*check this section if looks weird*/}
                 {introduction.intro || "Short about you here"}
             </span>
@@ -57,7 +57,7 @@ function CVPreview({
                         {experience.position || "Position"}
                         {experience.yearsOfExperience || "amount of years"} years
                     </span>                      
-                    <p>
+                    <p className="elaboration">
                         Briefly about the role : {experience.brief || "..."}
                     </p>
                 </div>
