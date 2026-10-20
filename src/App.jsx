@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Education from './components/Education';
 import Introduction from './components/Introduction';
 import Experience from './components/Experience';
+import CVpreview from './components/CVPreview';
 import './App.css'
 
 function App() {
@@ -50,7 +51,11 @@ function App() {
           setData={setExperience}
           />
         </section>
-
+        <CVpreview
+        introduction={introduction}
+        education={education}
+        experience={experience}
+        />
       </main>
 
     </div>

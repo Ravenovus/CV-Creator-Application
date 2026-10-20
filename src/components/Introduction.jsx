@@ -56,6 +56,7 @@ function Introduction({data, setData}){
                         value={data.name} 
                         onChange={handleChange} 
                         placeholder="John Doe" 
+                        maxLength={30}
                         required
                     />
                 </div>
@@ -87,13 +88,13 @@ function Introduction({data, setData}){
 
                 <div className="formGroup">
                     <label htmlFor="intro">Introduction</label>
-                    <input
-                        type="text" 
+                    <textarea
                         name="intro" 
                         id="intro" 
                         value={data.intro} 
                         onChange={handleChange} 
-                        placeholder="Short about me, who am i, what am i looking for" 
+                        placeholder="Short about me, who am i, what am i looking for"
+                        rows="3" 
                         required
                     />
                 </div>                

@@ -87,13 +87,13 @@ function Experience({data,setData}){
 
                 <div className="formGroup">
                     <label htmlFor="brief">Short role brief</label>
-                    <input
-                        type="text" 
+                    <textarea 
                         name="brief" 
                         id="brief" 
                         value={data.brief} 
                         onChange={handleChange} 
-                        placeholder="About the role, what i did, what i was responsible for" 
+                        placeholder="About the role, what i did, what i was responsible for"
+                        rows="5" 
                     />
                 </div>                
             </form>
